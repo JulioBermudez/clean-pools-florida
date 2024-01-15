@@ -32,7 +32,7 @@ export default function Home() {
     <Container>
       <Title>Clean Pools Florida</Title>
       <Subtitle>SoFlo Swimming Pools Service and Maintenace</Subtitle>
-      <Image src="public/assets/images/resort-pool-front-page.jpg" alt="pool cleaning tools, test kit, net, chlorine floater, resort-pool-front-page" />
+      <Image src="./assets/images/resort-pool-front-page.jpg" alt="pool cleaning tools, test kit, net, chlorine floater, resort-pool-front-page" />
       
     </Container>
   );

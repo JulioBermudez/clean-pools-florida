@@ -29,7 +29,7 @@ function NavTabs({ currentPage, handlePageChange }) {
   return (
     <>
     <NavBar>
-      <Logo src="public/assets/images/logo.jpg" alt="clean pools florida Company Logo" />
+      <Logo src="assets/images/logo.jpg" alt="clean pools florida Company Logo" />
     <ul className="nav nav-tabs">
       <li className="nav-item">
         <a
@@ -74,8 +74,8 @@ function NavTabs({ currentPage, handlePageChange }) {
       </li>
       <div>
         <IconLink href="https://twitter.com/cleanpoolsco" target="_blank"><i class="fab fa-twitter"></i></IconLink>
-        <IconLink href="https://instagram" target="_blank"><i class="fab fa-instagram"></i></IconLink>
-        <IconLink href="https://facebook" target="_blank"><i class="fab fa-facebook"></i></IconLink>
+        <IconLink href="https://instagram.com/cleanpoolsflorida" target="_blank"><i class="fab fa-instagram"></i></IconLink>
+        <IconLink href="https://facebook.com/" target="_blank"><i class="fab fa-facebook"></i></IconLink>
       </div>
     </ul>
     </NavBar>
