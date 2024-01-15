@@ -1,7 +1,8 @@
 # Clean Pools Florida Website
 
-
 Welcome to Clean Pools Florida Website, a project built with Vite and React. Access on https://www.cleanpoolsflorida.com
+
+![Alt text](<public/assets/images/Screenshot 2024-01-15 104914.png>)
 
 ## Getting Started
 
