@@ -3,12 +3,16 @@ import React from 'react';
 import styled from 'styled-components';
 
 const FooterContainer = styled.footer`
-  background-color: #f8f9fa;
+background-color: #f8f9fa;
   padding: 10px;
   text-align: center;
-  position: fixed;
-  bottom: 0;
   width: 100%;
+  margin-top: 20px;
+
+  @media (max-width: 768px) {
+    position: relative;
+    bottom: auto;
+  }
 `;
 
 const Footer = () => {

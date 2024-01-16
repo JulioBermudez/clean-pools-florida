@@ -2,7 +2,11 @@
 // We assign them to their own variable names
 import React from 'react';
 import styled from 'styled-components';
-import Footer from './pages/Footer';
+
+
+const NavContainer = styled.div`
+  background-color: #f8f9fa;
+`;
 
 const IconLink = styled.a`
   margin: 0 10px;
@@ -10,26 +14,37 @@ const IconLink = styled.a`
   color: #007bff;
 `;
 
-const NavBar = styled.li`
+const NavBar = styled.ul`
   display: flex;
   justify-content: flex-end;
   align-items: center; 
   padding: 15px;
-  background-color: #f8f9fa;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+`;
+
+const LogoContainer = styled.div`
+  text-align: center;
+  padding: 15px;
 `;
 
 const Logo = styled.img`
   max-height: 100px;
-  justify-content: flex;
-  margin-right: 65%; 
   border-radius: 20%;
+
+  @media (max-width: 768px) {
+    max-height: 200px;
+  border-radius: 20%;
+  }
 `;
 
 function NavTabs({ currentPage, handlePageChange }) {
   return (
     <>
+    <NavContainer>
     <NavBar>
-      <Logo src="assets/images/logo.jpg" alt="clean pools florida Company Logo" />
     <ul className="nav nav-tabs">
       <li className="nav-item">
         <a
@@ -79,9 +94,11 @@ function NavTabs({ currentPage, handlePageChange }) {
       </div>
     </ul>
     </NavBar>
-   {/* Add your page content here */}
-      {/* ... (your existing code) */}
-      <Footer />
+    <LogoContainer>
+    <Logo src="assets/images/logo.jpg" alt="clean pools florida Company Logo" />
+    </LogoContainer>
+    </NavContainer>
+
     </>
   );
 }
